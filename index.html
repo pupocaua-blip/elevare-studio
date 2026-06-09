@@ -1,106 +1,317 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elevare Studio Premium</title>
+<title>Elevare Studio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#080808;color:#fff}
-nav{position:fixed;top:0;width:100%;padding:15px;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);text-align:center;z-index:100}
-nav a{color:#fff;text-decoration:none;margin:0 15px}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#000,#111827,#1e3a8a)}
-.hero h1{font-size:4.5rem;color:#fbbf24}
-.hero p{max-width:800px;margin:20px auto;color:#ddd}
-.btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:16px 35px;border-radius:40px;font-weight:700}
-section{padding:90px 8%}
-.title{text-align:center;color:#fbbf24;font-size:2.3rem;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.card{background:#121212;padding:25px;border-radius:18px;border:1px solid #222;transition:.3s}
-.card:hover{transform:translateY(-8px)}
-.stats{text-align:center}
-.stat{background:#121212;padding:30px;border-radius:18px}
-.stat h3{font-size:2rem;color:#fbbf24}
-footer{background:#000;text-align:center;padding:60px 20px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;text-decoration:none;padding:15px 20px;border-radius:50px;font-weight:bold}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1120;
+color:white;
+line-height:1.7;
+}
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+}
+
+.hero{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+font-weight:800;
+}
+
+.hero p{
+font-size:1.2rem;
+opacity:.9;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:#60a5fa;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#60a5fa;
+margin-bottom:10px;
+}
+
+.portfolio-item,
+.review,
+.benefit{
+background:#111827;
+padding:25px;
+border-radius:18px;
+text-align:center;
+}
+
+.cta{
+background:linear-gradient(135deg,#172554,#1e3a8a);
+padding:80px 20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:70px 20px;
+}
+
+.whatsapp-box{
+margin-top:25px;
+background:#111827;
+padding:25px;
+border-radius:18px;
+display:inline-block;
+}
+
+.whatsapp{
+font-size:1.2rem;
+font-weight:700;
+color:#25D366;
+margin-bottom:15px;
+}
+
+.verse{
+margin-top:30px;
+opacity:.8;
+font-style:italic;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
 </style>
 </head>
+
 <body>
 
-<nav>
-<a href="#servicos">Serviços</a>
-<a href="#portfolio">Portfólio</a>
-<a href="#precos">Preços</a>
-<a href="#contato">Contato</a>
-</nav>
-
-<section class="hero">
-<div>
+<header>
+<div class="hero">
 <h1>✨ Elevare Studio</h1>
-<p>Transformando ideias em arte digital com criatividade, excelência e impacto visual.</p>
-<a class="btn" href="https://wa.me/5511966507813">Solicitar Orçamento</a>
+
+<p>
+Transformando ideias em arte digital.
+Bem-vindo à Elevare Studio, um estúdio criativo especializado em design moderno,
+identidade visual e soluções digitais.
+</p>
+
+<a href="https://wa.me/5511966507813" class="btn">
+🟢 Solicitar Orçamento
+</a>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">🚀 Nossos Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎨 Logos Profissionais</h3>
+<p>Criação de logotipos modernos, exclusivos e alinhados à identidade da sua marca.</p>
+</div>
+
+<div class="card">
+<h3>📱 Wallpapers Exclusivos</h3>
+<p>Wallpapers personalizados para celular e computador com estilos únicos e criativos.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Convites Digitais</h3>
+<p>Convites elegantes para aniversários, casamentos, eventos corporativos e ocasiões especiais.</p>
+</div>
+
+<div class="card">
+<h3>📸 Thumbnails para YouTube</h3>
+<p>Capas profissionais desenvolvidas para aumentar o alcance e a taxa de cliques.</p>
+</div>
+
+<div class="card">
+<h3>✝️ Artes Cristãs</h3>
+<p>Design para igrejas, congressos, cultos, eventos e redes sociais cristãs.</p>
+</div>
+
+<div class="card">
+<h3>📲 Social Media</h3>
+<p>Conteúdo visual para Instagram, Facebook, TikTok e outras plataformas digitais.</p>
+</div>
+
 </div>
 </section>
 
 <section>
-<h2 class="title">🏆 Nossos Números</h2>
-<div class="grid stats">
-<div class="stat"><h3>100+</h3><p>Artes Criadas</p></div>
-<div class="stat"><h3>50+</h3><p>Clientes Atendidos</p></div>
-<div class="stat"><h3>5★</h3><p>Avaliação Média</p></div>
-</div>
-</section>
+<h2 class="section-title">🖼️ Portfólio</h2>
 
-<section id="servicos">
-<h2 class="title">🚀 Serviços</h2>
 <div class="grid">
-<div class="card">🎨 Logos Profissionais</div>
-<div class="card">📸 Thumbnails para YouTube</div>
-<div class="card">📱 Wallpapers Exclusivos</div>
-<div class="card">📲 Social Media</div>
-<div class="card">✝️ Artes Cristãs</div>
-<div class="card">🎉 Convites Digitais</div>
-</div>
-</section>
 
-<section id="portfolio">
-<h2 class="title">🖼️ Portfólio</h2>
-<div class="grid">
-<div class="card">Logo Premium</div>
-<div class="card">Thumbnail Gamer</div>
-<div class="card">Arte para Igreja</div>
-<div class="card">Post Instagram</div>
-</div>
-</section>
+<div class="portfolio-item">✅ Logos Profissionais</div>
+<div class="portfolio-item">✅ Identidades Visuais</div>
+<div class="portfolio-item">✅ Artes para Redes Sociais</div>
+<div class="portfolio-item">✅ Thumbnails para YouTube</div>
+<div class="portfolio-item">✅ Artes Cristãs</div>
+<div class="portfolio-item">✅ Convites Digitais</div>
 
-<section id="precos">
-<h2 class="title">💎 Planos</h2>
-<div class="grid">
-<div class="card"><h3>Thumbnail</h3><p>A partir de R$10</p></div>
-<div class="card"><h3>Logo</h3><p>A partir de R$30</p></div>
-<div class="card"><h3>Social Media</h3><p>Pacotes personalizados</p></div>
 </div>
 </section>
 
 <section>
-<h2 class="title">⭐⭐⭐⭐⭐ Depoimentos</h2>
+<h2 class="section-title">💎 Por que escolher a Elevare Studio?</h2>
+
 <div class="grid">
-<div class="card">"Muito profissional e rápido!"</div>
-<div class="card">"Meu canal cresceu com as thumbnails."</div>
-<div class="card">"Artes cristãs incríveis."</div>
+
+<div class="benefit">✅ Atendimento rápido e personalizado</div>
+<div class="benefit">✅ Design moderno e profissional</div>
+<div class="benefit">✅ Projetos exclusivos</div>
+<div class="benefit">✅ Arquivos em alta qualidade</div>
+<div class="benefit">✅ Entrega organizada</div>
+<div class="benefit">✅ Compromisso com a excelência</div>
+
 </div>
 </section>
 
-<footer id="contato">
-<h2>📞 Contato</h2>
-<p>WhatsApp: (11) 96650-7813</p><br>
-<a class="btn" href="https://wa.me/5511966507813">Conversar Agora</a>
-<p style="margin-top:30px">Elevare Studio • Criatividade • Excelência • Impacto Visual</p>
-<p>“Tudo quanto fizerdes, fazei-o de todo o coração.” — Colossenses 3:23</p>
+<section>
+<h2 class="section-title">⭐ O que nossos clientes dizem</h2>
+
+<div class="grid">
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Excelente atendimento e resultado acima das expectativas."
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Design moderno, profissional e entrega rápida."
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br><br>
+"Qualidade incrível do início ao fim."
+</div>
+
+</div>
+</section>
+
+<section class="cta">
+<h2>📞 Solicite seu Orçamento</h2>
+
+<p>
+Cada projeto possui necessidades únicas.
+Entre em contato conosco e receba uma proposta personalizada.
+</p>
+
+<br>
+
+<a href="https://wa.me/5511966507813" class="btn">
+🟢 Solicitar Orçamento
+</a>
+</section>
+
+<footer>
+
+<h2>Elevare Studio</h2>
+
+<p>
+Criatividade • Excelência • Impacto Visual
+</p>
+
+<div class="whatsapp-box">
+
+<div class="whatsapp">
+📱 WhatsApp: (11) 96650-7813
+</div>
+
+<a href="https://wa.me/5511966507813" class="btn">
+Solicitar Orçamento
+</a>
+
+</div>
+
+<p class="verse">
+" Tudo quanto fizerdes, fazei-o de todo o coração. "
+<br>
+— Colossenses 3:23
+</p>
+
 </footer>
-
-<a class="whatsapp" href="https://wa.me/5511966507813">WhatsApp</a>
 
 </body>
 </html>
+```
